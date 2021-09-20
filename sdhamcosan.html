@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--Bai 1:-->
+<!--<p id="sad"></p>-->
+<!--<script>-->
+<!--    let myColor = ["Black", "Yellow", "Red", "Brown", "Gray"]-->
+<!--    for (let i = 0; i < myColor.length; i++) {-->
+<!--        document.getElementById("sad").innerHTML += myColor[i] + ', '-->
+<!--    }-->
+<!--</script>-->
+
+<!--Bai 2:-->
+<!--<input type="text" id="bai2">-->
+<!--<button onclick="oddEven()">Click Me</button>-->
+<!--<p id="sad"></p>-->
+<!--<script>-->
+<!--    let numbers = []-->
+<!--    alert(myColor.indexOf("White"))-->
+
+<!--    function oddEven() {-->
+<!--        let newString = document.getElementById("bai2").value.toString()-->
+<!--        document.getElementsByClassName("sad").innerHTML= [newString[0]]-->
+<!--        for (let i = 1; i < newString.length; i++) {-->
+<!--            if ((newString[i - 1] % 2 === 0) && (newString[i] % 2 === 0)) {-->
+<!--                document.getElementsByClassName("sad").innerHTML += "-" + newString[i]-->
+<!--            } else {-->
+<!--                document.getElementsByClassName("sad").innerHTML += newString[i]-->
+<!--            }-->
+<!--        }-->
+<!--    }-->
+
+<!--</script>-->
+
+
+
+
+
+bai 3
+<script>
+    var str = 'c';
+    var UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    var LOWER = 'abcdefghijklmnopqrstuvwxyz';
+    var result = [];
+
+    for(var x=0; x<str.length; x++)
+    {
+        if(UPPER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toLowerCase());
+        }
+        else if(LOWER.indexOf(str[x]) !== -1)
+        {
+            result.push(str[x].toUpperCase());
+        }
+        else
+        {
+            result.push(str[x]);
+        }
+    }
+    console.log(result.join(''));
+
+</script>
+</body>
+</html>
